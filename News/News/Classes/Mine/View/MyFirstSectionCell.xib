@@ -95,10 +95,12 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="CollectionView" destination="CSB-vN-lqb" id="u0a-GX-6VO"/>
+                <outlet property="collectionView" destination="CSB-vN-lqb" id="CRQ-hk-dbb"/>
                 <outlet property="leftLabel" destination="L5f-Dv-lQ6" id="SAr-EN-GeH"/>
                 <outlet property="rightImageView" destination="xyh-ZQ-X0r" id="fXL-P8-ioF"/>
                 <outlet property="rightLabel" destination="uJw-9V-Ag8" id="WBG-cu-b3v"/>
+                <outlet property="separatorView" destination="Bvg-bH-1D3" id="EXs-KP-elJ"/>
+                <outlet property="topView" destination="rtC-4p-vFj" id="cG6-6b-ycK"/>
             </connections>
             <point key="canvasLocation" x="64.5" y="37"/>
         </tableViewCell>

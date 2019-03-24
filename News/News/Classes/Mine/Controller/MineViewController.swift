@@ -64,12 +64,12 @@ extension MineViewController{
     
     //每组头部的高度
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 1 ? 0 : 20
+        return section == 1 ? 1 : 10
     }
     
     //返回行高
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 || indexPath.row==1 {
+        if indexPath.section == 0 && indexPath.row == 0 {
             return (concerns.count == 0 || concerns.count == 1) ? 40 : 114
         }
         return 40

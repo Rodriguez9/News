@@ -36,6 +36,9 @@
                             <state key="normal" title="夜间" image="nighticon_profile_24x24_">
                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
+                            <connections>
+                                <action selector="dayOrNightButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="o13-8Q-8Zr"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zro-8v-FMa">
                             <rect key="frame" x="125" y="0.0" width="125" height="70"/>
@@ -123,6 +126,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bgImageView" destination="T3T-Wa-hxr" id="H5u-O1-pol"/>
+                <outlet property="bottomView" destination="LKI-4M-OMx" id="rjM-e8-qfk"/>
                 <outlet property="dayOrNightButton" destination="jX6-2t-3VZ" id="yeR-BE-B9F"/>
                 <outlet property="favorityButton" destination="3fP-uu-xol" id="ncm-NX-q9z"/>
                 <outlet property="historyButton" destination="zro-8v-FMa" id="L8G-nD-qCZ"/>
@@ -130,6 +134,7 @@
                 <outlet property="moreLoginButton" destination="b60-3z-mgQ" id="dd5-RE-CZh"/>
                 <outlet property="qqButton" destination="olf-Rf-lf1" id="DnZ-Ig-YV8"/>
                 <outlet property="sinaButton" destination="u1a-ji-ZSF" id="muu-qI-uXp"/>
+                <outlet property="stackView" destination="ADE-8c-6T3" id="Qg7-Zf-Bx4"/>
                 <outlet property="wechatButton" destination="b3k-Ik-ApN" id="RM7-Se-M67"/>
             </connections>
         </view>

@@ -10,6 +10,7 @@ import UIKit
 
 class MyOtherCell: UITableViewCell,RegisterCellOrNib {
     
+    @IBOutlet weak var separatorView: UIView!
     //标题
     @IBOutlet weak var leftLabel: UILabel!
     //副标题
@@ -18,7 +19,13 @@ class MyOtherCell: UITableViewCell,RegisterCellOrNib {
     @IBOutlet weak var rightImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        ///设置主题
+        leftLabel.theme_textColor = "colors.black"
+        rightLabel.theme_textColor = "colors.cellRightTextColor"
+        rightImageView.theme_image = "images.cellRightArrow"
+        separatorView.theme_backgroundColor = "colors.separatorViewColor"
+        theme_backgroundColor = "colors.cellBackgroundColor"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

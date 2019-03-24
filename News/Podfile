@@ -5,9 +5,11 @@ target 'News' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 	
-pod 'Alamofire'
-pod 'SwiftyJSON', '~> 4.0.0'
-pod 'HandyJSON', '~> 4.0.0-beta.1'
-pod 'Kingfisher', '~> 4.6.1'
- pod 'IBAnimatable', '~> 5.0.0'
+    pod 'Alamofire'
+    pod 'SwiftyJSON', '~> 4.0.0'
+    pod 'HandyJSON', '~> 4.0.0-beta.1'
+    pod 'Kingfisher', '~> 4.6.1'
+    pod 'IBAnimatable', '~> 5.0.0'
+    pod 'SwiftTheme', '~> 0.4.1'
+
 end
