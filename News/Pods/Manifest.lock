@@ -1,21 +1,24 @@
 PODS:
   - Alamofire (4.6.0)
   - HandyJSON (4.0.0-beta.1)
+  - IBAnimatable (5.0.0)
   - Kingfisher (4.6.1)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - HandyJSON (~> 4.0.0-beta.1)
+  - IBAnimatable (~> 5.0.0)
   - Kingfisher (~> 4.6.1)
   - SwiftyJSON (~> 4.0.0)
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
+  IBAnimatable: aa2286a9cf8fb4ae2e1be85c5287ae56143b024f
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 3d338bdc1cd6379428d2514515305d70a2dff331
+PODFILE CHECKSUM: 290147e5e7504226b693b77352f8042bc29dfc74
 
 COCOAPODS: 1.3.1

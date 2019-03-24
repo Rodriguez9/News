@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27318D2B224782E0003B9356 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27318D2A224782E0003B9356 /* NoLoginHeaderView.swift */; };
+		27318D2D22478302003B9356 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27318D2C22478302003B9356 /* NoLoginHeaderView.xib */; };
 		2748460E2238278500022187 /* MyFirstSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2748460C2238278500022187 /* MyFirstSectionCell.swift */; };
 		2748460F2238278500022187 /* MyFirstSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2748460D2238278500022187 /* MyFirstSectionCell.xib */; };
 		274961FB22318D1A00487B90 /* MyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274961FA22318D1A00487B90 /* MyCellModel.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		09628A8F5CF75382CEAC1164 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		27318D2A224782E0003B9356 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
+		27318D2C22478302003B9356 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 		2748460C2238278500022187 /* MyFirstSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSectionCell.swift; sourceTree = "<group>"; };
 		2748460D2238278500022187 /* MyFirstSectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFirstSectionCell.xib; sourceTree = "<group>"; };
 		274961FA22318D1A00487B90 /* MyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCellModel.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				2748460D2238278500022187 /* MyFirstSectionCell.xib */,
 				27F83DEF22469E3C009F9410 /* MyConcernCell.swift */,
 				27F83DF022469E3C009F9410 /* MyConcernCell.xib */,
+				27318D2A224782E0003B9356 /* NoLoginHeaderView.swift */,
+				27318D2C22478302003B9356 /* NoLoginHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27318D2D22478302003B9356 /* NoLoginHeaderView.xib in Resources */,
 				27F83DF222469E3C009F9410 /* MyConcernCell.xib in Resources */,
 				276481C722381F83000DB899 /* MyOtherCell.xib in Resources */,
 				2748460F2238278500022187 /* MyFirstSectionCell.xib in Resources */,
@@ -412,6 +419,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-News/Pods-News-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -419,6 +427,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -470,6 +479,7 @@
 				2758A48D2228B88D00961639 /* NetworkTool.swift in Sources */,
 				27B05F832219AF0600DCDBA8 /* HomeViewController.swift in Sources */,
 				27F83DF122469E3C009F9410 /* MyConcernCell.swift in Sources */,
+				27318D2B224782E0003B9356 /* NoLoginHeaderView.swift in Sources */,
 				2748460E2238278500022187 /* MyFirstSectionCell.swift in Sources */,
 				27B8E87D224402070063F668 /* UIView+Extension.swift in Sources */,
 				27B05F852219AF1400DCDBA8 /* VideoViewController.swift in Sources */,

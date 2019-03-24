@@ -13,10 +13,20 @@ class MineViewController : UITableViewController {
     var sections = [[MyCellModel]]()
     var concerns = [MyConcern]()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
+        tableView.tableHeaderView = headerView
         tableView.backgroundColor = UIColor.globalBackgroundColor()
         tableView.separatorStyle = .none
         tableView.ym_registerCell(cell: MyFirstSectionCell.self)
@@ -37,6 +47,17 @@ class MineViewController : UITableViewController {
             })
         }
     }
+    
+    fileprivate lazy var headerView : NoLoginHeaderView = {
+        let headerView = NoLoginHeaderView.headerView()
+        //Bundle.main.loadNibNamed("NoLoginHeaderView", owner: self, options: nil)?.last as! NoLoginHeaderView//
+        return headerView
+    }()
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
+    
 }
 
 extension MineViewController{
@@ -101,6 +122,15 @@ extension MineViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        if offsetY < 0 {
+            let totalOffset = kMyHeaderViewHeight + abs(offsetY)
+            let f = totalOffset / kMyHeaderViewHeight
+            headerView.bgImageView.frame = CGRect(x: -screenWidth * (f - 1) * 0.5, y: offsetY, width: screenWidth * f, height: totalOffset)
+        }
     }
     
 }

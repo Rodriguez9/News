@@ -64,7 +64,6 @@ extension NetworkToolProtocol{
                 return
             }
             if let value = response.result.value{
-                print(value)
                 let json = JSON(value)
                 guard json["message"] == "success" else{
                     return

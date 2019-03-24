@@ -9,4 +9,5 @@ pod 'Alamofire'
 pod 'SwiftyJSON', '~> 4.0.0'
 pod 'HandyJSON', '~> 4.0.0-beta.1'
 pod 'Kingfisher', '~> 4.6.1'
+ pod 'IBAnimatable', '~> 5.0.0'
 end
