@@ -4,6 +4,8 @@
 <dict>
 	<key>colors</key>
 	<dict>
+		<key>tabbarTintColor</key>
+		<string>#f55d5d</string>
 		<key>separatorViewColor</key>
 		<string>#f0f0f0</string>
 		<key>cellRightTextColor</key>
@@ -19,6 +21,10 @@
 	</dict>
 	<key>images</key>
 	<dict>
+		<key>publishButtonBackgroundSelectImage</key>
+		<string>feed_publish_press_44x44_</string>
+		<key>publishButtonBackgroundImage</key>
+		<string>feed_publish_44x44_</string>
 		<key>cellRightArrow</key>
 		<string>setting_rightarrow_8x14_</string>
 		<key>loginMobileButton</key>

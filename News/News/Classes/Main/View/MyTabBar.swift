@@ -12,6 +12,8 @@ class MyTabBar: UITabBar {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        theme_tintColor = "colors.tabbarTintColor"
+        theme_barTintColor = "colors.cellBackgroundColor"
         addSubview(publishButton)
     }
     
@@ -21,8 +23,8 @@ class MyTabBar: UITabBar {
     
     private lazy var publishButton : UIButton = {
         let publishButton = UIButton(type: .custom)
-        publishButton.setBackgroundImage(UIImage(named: "feed_publish_44x44_"), for: .normal)
-        publishButton.setBackgroundImage(UIImage(named: "feed_publish_press_44x44_"), for: .selected)
+        publishButton.theme_setImage("images.publishButtonBackgroundImage", forState: .normal)
+        publishButton.theme_setImage("images.publishButtonBackgroundSelectImage", forState: .selected)
         publishButton.sizeToFit()
         return publishButton
     }()
@@ -32,7 +34,7 @@ class MyTabBar: UITabBar {
         
         //当前tabbar的高度和宽度
         let width = frame.width
-        let height = frame.height
+        let height : CGFloat = 49
         
         publishButton.center = CGPoint(x: width * 0.5, y: height * 0.5-7)
         //设置其他按钮的frame

@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper_profile_night" translatesAutoresizingMaskIntoConstraints="NO" id="T3T-Wa-hxr">
-                    <rect key="frame" x="0.0" y="-20" width="375" height="280"/>
+                    <rect key="frame" x="0.0" y="-44" width="375" height="304"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LKI-4M-OMx">
                     <rect key="frame" x="0.0" y="190" width="375" height="70"/>
@@ -120,7 +120,7 @@
                 <constraint firstItem="LKI-4M-OMx" firstAttribute="top" secondItem="b60-3z-mgQ" secondAttribute="bottom" constant="20" id="X4x-VL-cqX"/>
                 <constraint firstAttribute="bottom" secondItem="T3T-Wa-hxr" secondAttribute="bottom" id="g9h-t6-tLz"/>
                 <constraint firstAttribute="trailing" secondItem="LKI-4M-OMx" secondAttribute="trailing" id="k6Q-Y8-GJf"/>
-                <constraint firstItem="T3T-Wa-hxr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-20" id="pC4-zq-fhT"/>
+                <constraint firstItem="T3T-Wa-hxr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-44" id="pC4-zq-fhT"/>
                 <constraint firstItem="ADE-8c-6T3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uGK-xr-YHy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

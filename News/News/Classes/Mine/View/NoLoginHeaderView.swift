@@ -67,5 +67,6 @@ class NoLoginHeaderView: UIView {
         sender.isSelected = !sender.isSelected
         UserDefaults.standard.set(sender.isSelected, forKey: isNight)
         MyTheme.switchNight(sender.isSelected)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "dayOrNightButtonClick"), object: sender.isSelected)
     }
 }
