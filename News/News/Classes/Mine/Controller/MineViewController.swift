@@ -8,7 +8,10 @@
 
 import UIKit
 import HandyJSON
+import RxCocoa
+import RxSwift
 class MineViewController : UITableViewController {
+    fileprivate let disposeBag = DisposeBag()
     //一定不为空，否则返回数据会奔溃
     var sections = [[MyCellModel]]()
     var concerns = [MyConcern]()
@@ -46,6 +49,14 @@ class MineViewController : UITableViewController {
                 self.tableView.reloadSections(indexSet, with: .automatic)
             })
         }
+        headerView.moreLoginButton.rx.controlEvent(.touchUpInside)
+            .subscribe(onNext: { [weak self] in
+                let storyboard = UIStoryboard(name: String(describing: MoreLoginViewController.self), bundle: nil)
+                let moreLoginVC = storyboard.instantiateViewController(withIdentifier: String(describing: MoreLoginViewController.self)) as! MoreLoginViewController
+                moreLoginVC.modalSize = (width: .full, height: .custom(size: Float(screenHeight - (isIPhoneX ? 44 : 20))))
+                self!.present(moreLoginVC, animated: true, completion: nil)
+        })
+        .disposed(by: disposeBag)
     }
     
     fileprivate lazy var headerView : NoLoginHeaderView = {
