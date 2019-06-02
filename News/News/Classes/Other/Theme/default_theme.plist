@@ -18,9 +18,29 @@
 		<string>#ffffff</string>
 		<key>black</key>
 		<string>#000000</string>
+		<key>enterToutiaoBackgroundColor</key>
+		<string>#F9A9A9</string>
+		<key>enterToutiaoTextColor</key>
+		<string>#ffffff</string>
+		<key>loginMoblieViewBackgroundColor</key>
+		<string>#ffffff</string>
 	</dict>
 	<key>images</key>
 	<dict>
+		<key>moreLoginMailButton</key>
+		<string>mailbox_sdk_login_40x40_</string>
+		<key>moreLoginTianyiButton</key>
+		<string>tianyi_sdk_login_40x40_</string>
+		<key>moreLoginQQButton</key>
+		<string>qq_sdk_login_40x40_</string>
+		<key>moreLoginWechatButton</key>
+		<string>weixin_sdk_login_40x40_</string>
+		<key>loginCloseButtonImage</key>
+		<string>close_sdk_login_14x14_</string>
+		<key>loginReadButtonSelected</key>
+		<string>details_choose_ok_icon_15x15_</string>
+		<key>loginReadButton</key>
+		<string>details_choose_icon_15x15_</string>
 		<key>publishButtonBackgroundSelectImage</key>
 		<string>feed_publish_press_44x44_</string>
 		<key>publishButtonBackgroundImage</key>

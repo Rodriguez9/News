@@ -75,7 +75,7 @@ extension MineViewController{
     
     //每组头部的高度
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return section == 1 ? 1 : 10
+        return section == 1 ? 0 : 10
     }
     
     //返回行高
@@ -88,7 +88,7 @@ extension MineViewController{
     
     //返回tableview的view，每组头部的视图
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 10))
         view.backgroundColor = UIColor.globalBackgroundColor()
         return view
     }

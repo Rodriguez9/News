@@ -105,7 +105,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiN-Fp-loC" userLabel="验证码" customClass="AnimatableView" customModule="IBAnimatable">
                                 <rect key="frame" x="46" y="173.5" width="283" height="40"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsl-Lh-SCD">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wsl-Lh-SCD">
                                         <rect key="frame" x="188" y="0.0" width="95" height="40"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6I-32-eIy">
@@ -191,6 +191,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmw-aq-DuJ">
                                 <rect key="frame" x="69" y="292.5" width="15" height="22"/>
                                 <state key="normal" image="details_choose_ok_icon_15x15_"/>
+                                <connections>
+                                    <action selector="readButton:" destination="e5t-97-gjP" eventType="touchUpInside" id="CUZ-Vj-aSK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9L-E7-zgf">
                                 <rect key="frame" x="147" y="340.5" width="80" height="28"/>
@@ -198,15 +201,18 @@
                                 <state key="normal" title="账号密码登录">
                                     <color key="titleColor" red="0.28235294117647058" green="0.27843137254901962" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginModeButtonClick:" destination="e5t-97-gjP" eventType="touchUpInside" id="yEs-74-dhQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rq-E6-iG4">
                                 <rect key="frame" x="46" y="577" width="283" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK0-4t-jAi">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zK0-4t-jAi" userLabel="wechat">
                                         <rect key="frame" x="0.0" y="0.0" width="71" height="40"/>
                                         <state key="normal" image="weixin_sdk_login_40x40_"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g24-n0-j50">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g24-n0-j50" userLabel="QQ">
                                         <rect key="frame" x="71" y="0.0" width="70.5" height="40"/>
                                         <state key="normal" image="qq_sdk_login_40x40_"/>
                                     </button>
@@ -264,6 +270,27 @@
                             <real key="value" value="15"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="QQLoginButton" destination="g24-n0-j50" id="Uig-ll-X1p"/>
+                        <outlet property="enterTouTiaoButton" destination="aki-F5-azR" id="h7U-9S-zMn"/>
+                        <outlet property="findPasswordButton" destination="0l2-zx-fv7" id="hWB-XR-4rU"/>
+                        <outlet property="findPasswordView" destination="Wsl-Lh-SCD" id="phv-tT-Dhj"/>
+                        <outlet property="loginCloseButton" destination="tyu-di-tML" id="yrb-CC-VZd"/>
+                        <outlet property="loginModeButton" destination="c9L-E7-zgf" id="MeQ-NH-ybc"/>
+                        <outlet property="mailLoginButton" destination="79v-zG-vCK" id="fw3-Vl-gr6"/>
+                        <outlet property="middleTipLabel" destination="un2-nM-IgA" id="gub-ab-pZl"/>
+                        <outlet property="mobileTextField" destination="OvQ-aU-0br" id="JVH-PC-d5u"/>
+                        <outlet property="mobileView" destination="PY5-JY-AIs" id="duV-wk-cUj"/>
+                        <outlet property="passwordView" destination="NiN-Fp-loC" id="InA-eY-8gW"/>
+                        <outlet property="passwordtextField" destination="rxa-YQ-cGe" id="Ix3-TF-yOX"/>
+                        <outlet property="readButton" destination="Dmw-aq-DuJ" id="REh-RX-uKD"/>
+                        <outlet property="readLabel" destination="S7r-QW-FcK" id="S9d-jA-G2i"/>
+                        <outlet property="sendVerifyButton" destination="y6e-HM-DEQ" id="iXD-ED-oKd"/>
+                        <outlet property="sendVerifyView" destination="2Pt-n8-cUB" id="wiQ-FH-BVa"/>
+                        <outlet property="tianyiLoginButton" destination="ULw-Cs-Tok" id="aGq-rj-k8y"/>
+                        <outlet property="topLabel" destination="smI-gM-PJg" id="RV0-v9-U54"/>
+                        <outlet property="wechatLoginButton" destination="zK0-4t-jAi" id="zxp-t1-SRu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uqa-Nd-Sv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
