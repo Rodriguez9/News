@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27182C3022A6E93900107D02 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182C2F22A6E93900107D02 /* SettingViewController.swift */; };
 		27318D2B224782E0003B9356 /* NoLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27318D2A224782E0003B9356 /* NoLoginHeaderView.swift */; };
 		27318D2D22478302003B9356 /* NoLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27318D2C22478302003B9356 /* NoLoginHeaderView.xib */; };
 		27318D2F2247E6BA003B9356 /* MyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27318D2E2247E6BA003B9356 /* MyTheme.swift */; };
@@ -20,6 +21,10 @@
 		2758A48D2228B88D00961639 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758A48C2228B88D00961639 /* NetworkTool.swift */; };
 		276481C622381F83000DB899 /* MyOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276481C422381F83000DB899 /* MyOtherCell.swift */; };
 		276481C722381F83000DB899 /* MyOtherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 276481C522381F83000DB899 /* MyOtherCell.xib */; };
+		278CDF8E22A8215C00412DAC /* settingPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 278CDF8D22A8215C00412DAC /* settingPlist.plist */; };
+		278CDF9122A8263300412DAC /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CDF9022A8263300412DAC /* SettingModel.swift */; };
+		278CDF9422A82DDE00412DAC /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278CDF9222A82DDE00412DAC /* SettingCell.swift */; };
+		278CDF9522A82DDE00412DAC /* SettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278CDF9322A82DDE00412DAC /* SettingCell.xib */; };
 		27B05F6D2219AB5200DCDBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B05F6C2219AB5200DCDBA8 /* AppDelegate.swift */; };
 		27B05F742219AB5200DCDBA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B05F732219AB5200DCDBA8 /* Assets.xcassets */; };
 		27B05F7F2219ABBB00DCDBA8 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B05F7E2219ABBB00DCDBA8 /* MyTabBarController.swift */; };
@@ -41,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		09628A8F5CF75382CEAC1164 /* Pods-News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-News.release.xcconfig"; path = "Pods/Target Support Files/Pods-News/Pods-News.release.xcconfig"; sourceTree = "<group>"; };
+		27182C2F22A6E93900107D02 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		27318D2A224782E0003B9356 /* NoLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoLoginHeaderView.swift; sourceTree = "<group>"; };
 		27318D2C22478302003B9356 /* NoLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoLoginHeaderView.xib; sourceTree = "<group>"; };
 		27318D2E2247E6BA003B9356 /* MyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTheme.swift; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 		2758A48C2228B88D00961639 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		276481C422381F83000DB899 /* MyOtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOtherCell.swift; sourceTree = "<group>"; };
 		276481C522381F83000DB899 /* MyOtherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyOtherCell.xib; sourceTree = "<group>"; };
+		278CDF8D22A8215C00412DAC /* settingPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settingPlist.plist; sourceTree = "<group>"; };
+		278CDF9022A8263300412DAC /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		278CDF9222A82DDE00412DAC /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		278CDF9322A82DDE00412DAC /* SettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCell.xib; sourceTree = "<group>"; };
 		27B05F692219AB5200DCDBA8 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B05F6C2219AB5200DCDBA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27B05F732219AB5200DCDBA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,8 +136,19 @@
 				27F83DF022469E3C009F9410 /* MyConcernCell.xib */,
 				27318D2A224782E0003B9356 /* NoLoginHeaderView.swift */,
 				27318D2C22478302003B9356 /* NoLoginHeaderView.xib */,
+				278CDF9222A82DDE00412DAC /* SettingCell.swift */,
+				278CDF9322A82DDE00412DAC /* SettingCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		278CDF8F22A8260900412DAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				274961FA22318D1A00487B90 /* MyCellModel.swift */,
+				278CDF9022A8263300412DAC /* SettingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		27B05F602219AB5200DCDBA8 = {
@@ -193,9 +214,9 @@
 		27B05F8F2219C27F00DCDBA8 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				278CDF8F22A8260900412DAC /* Model */,
 				276481BF22381B8E000DB899 /* View */,
 				27B05F9A2219C2C900DCDBA8 /* Controller */,
-				27B05F922219C2A800DCDBA8 /* Model */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -211,13 +232,6 @@
 			sourceTree = "<group>";
 		};
 		27B05F912219C2A500DCDBA8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		27B05F922219C2A800DCDBA8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -273,6 +287,7 @@
 				27B05F882219AF2D00DCDBA8 /* MineViewController.swift */,
 				274DF418225C1C7100F79B84 /* MoreLoginViewController.swift */,
 				274DF41A225C1D0A00F79B84 /* MoreLoginViewController.storyboard */,
+				27182C2F22A6E93900107D02 /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +315,7 @@
 				27B05F782219AB5200DCDBA8 /* Info.plist */,
 				27B05F6C2219AB5200DCDBA8 /* AppDelegate.swift */,
 				27D55A9E22244BC9005EF76B /* Const.swift */,
+				278CDF8D22A8215C00412DAC /* settingPlist.plist */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -327,7 +343,6 @@
 		27B05FA12219C34F00DCDBA8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				274961FA22318D1A00487B90 /* MyCellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -426,7 +441,9 @@
 				27318D2D22478302003B9356 /* NoLoginHeaderView.xib in Resources */,
 				27F83DF222469E3C009F9410 /* MyConcernCell.xib in Resources */,
 				27318D342247E9CE003B9356 /* night_theme.plist in Resources */,
+				278CDF8E22A8215C00412DAC /* settingPlist.plist in Resources */,
 				274DF41B225C1D0A00F79B84 /* MoreLoginViewController.storyboard in Resources */,
+				278CDF9522A82DDE00412DAC /* SettingCell.xib in Resources */,
 				276481C722381F83000DB899 /* MyOtherCell.xib in Resources */,
 				2748460F2238278500022187 /* MyFirstSectionCell.xib in Resources */,
 				27B05F742219AB5200DCDBA8 /* Assets.xcassets in Resources */,
@@ -510,6 +527,7 @@
 			files = (
 				2758A48D2228B88D00961639 /* NetworkTool.swift in Sources */,
 				274DF419225C1C7100F79B84 /* MoreLoginViewController.swift in Sources */,
+				278CDF9422A82DDE00412DAC /* SettingCell.swift in Sources */,
 				27318D2F2247E6BA003B9356 /* MyTheme.swift in Sources */,
 				27B05F832219AF0600DCDBA8 /* HomeViewController.swift in Sources */,
 				27F83DF122469E3C009F9410 /* MyConcernCell.swift in Sources */,
@@ -525,10 +543,12 @@
 				276481C622381F83000DB899 /* MyOtherCell.swift in Sources */,
 				27B05F6D2219AB5200DCDBA8 /* AppDelegate.swift in Sources */,
 				27B05F7F2219ABBB00DCDBA8 /* MyTabBarController.swift in Sources */,
+				27182C3022A6E93900107D02 /* SettingViewController.swift in Sources */,
 				27D55A9F22244BC9005EF76B /* Const.swift in Sources */,
 				27D55AA222244C59005EF76B /* UIColor+Extension.swift in Sources */,
 				27B8E87F224403320063F668 /* UITableView+Extension.swift in Sources */,
 				27B8E881224405E90063F668 /* UICollectionView+Extension.swift in Sources */,
+				278CDF9122A8263300412DAC /* SettingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

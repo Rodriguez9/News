@@ -30,7 +30,7 @@ class MineViewController : UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         tableView.tableHeaderView = headerView
-        tableView.backgroundColor = UIColor.globalBackgroundColor()
+        tableView.theme_backgroundColor = "colors.tableViewBackgroundColor"
         tableView.separatorStyle = .none
         tableView.ym_registerCell(cell: MyFirstSectionCell.self)
         tableView.ym_registerCell(cell: MyOtherCell.self)
@@ -89,7 +89,7 @@ extension MineViewController{
     //返回tableview的view，每组头部的视图
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 10))
-        view.backgroundColor = UIColor.globalBackgroundColor()
+        view.theme_backgroundColor = "colors.tableViewBackgroundColor"
         return view
     }
     
@@ -133,6 +133,13 @@ extension MineViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 3 {
+            if indexPath.row == 1{
+                let settingVC = SettingViewController()
+                settingVC.navigationItem.title = "设置"
+                navigationController?.pushViewController(settingVC, animated: true)
+            }
+        }
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {

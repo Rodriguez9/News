@@ -47,6 +47,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Inu-c9-pk7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2F2-K0-Cl2"/>
+                    <constraint firstItem="x7d-RR-CUC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4HJ-f7-JbN"/>
                     <constraint firstItem="C43-eQ-dki" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6im-hD-ZdJ"/>
                     <constraint firstItem="Inu-c9-pk7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dev-00-Ocf"/>
                     <constraint firstItem="x7d-RR-CUC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dk8-cV-R1B"/>

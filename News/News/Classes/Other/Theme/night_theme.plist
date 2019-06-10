@@ -4,6 +4,8 @@
 <dict>
 	<key>colors</key>
 	<dict>
+		<key>tableViewBackgroundColor</key>
+		<string>#1b1b1b</string>
 		<key>loginMoblieViewBackgroundColor</key>
 		<string>#cacaca</string>
 		<key>tabbarTintColor</key>
@@ -24,6 +26,8 @@
 		<string>#5c3d3d</string>
 		<key>enterToutiaoTextColor</key>
 		<string>#929292</string>
+		<key>navigationBarTintColor</key>
+		<string>#707070</string>
 	</dict>
 	<key>images</key>
 	<dict>
