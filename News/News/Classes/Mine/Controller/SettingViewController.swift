@@ -42,7 +42,6 @@ class SettingViewController: UITableViewController {
             case 0: //清理缓存
                 //从沙河中获取缓存数据大小
                 calculateDiskCashSize(cell)
-                break
             case 2://摘要
                 cell.selectionStyle = .none
             default:
@@ -72,7 +71,6 @@ class SettingViewController: UITableViewController {
                     break
                 }
         default: break
-            
         }
     }
     
@@ -176,7 +174,6 @@ extension SettingViewController{
         alertController.addAction(onceAction)
         present(alertController, animated: true, completion: nil)
     }
-    
 }
 
 extension SettingViewController{
