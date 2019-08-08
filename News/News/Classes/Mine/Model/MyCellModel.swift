@@ -34,7 +34,6 @@ struct MyConcern :  HandyJSON{
     var userAuthInfo : UserAuthInfo?{
         return UserAuthInfo.deserialize(from: user_auth_info)
     }
-    
 }
 
 struct UserAuthInfo: HandyJSON {
